@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+	text-align: center;
+	background: #223355;
+	margin-top: 30px;
+}
+#cavas{
+  width: 900;
+  height: 700;
+}
