@@ -35,14 +35,14 @@ function preload ()
 function create ()
 {
     //world stuff
-    this.cameras.main.setBounds(0, 0, 16 * 50 * 2, 16 * 38 * 2);
-    this.physics.world.setBounds(0, 0, 16 * 50 * 2, 16 * 38 * 2);
+    this.cameras.main.setBounds(0, 0, 16 * 50 * 2 * 3, 16 * 38 * 2 * 5);
+    this.physics.world.setBounds(0, 0, 16 * 50 * 2 * 3, 16 * 38 * 2 * 5);
     this.add.image(0,0, 'bg').setOrigin(0,0).setScale(50,38);
     map = this.make.tilemap({ key: 'map', tilewidth: 32, tileheight: 32});
     tileset = map.addTilesetImage('tiles');
     layer = map.createDynamicLayer('Level1', tileset).setScale(2);
 
-    map.setCollision([ 20 , 48]);
+    map.setCollision([ 48]);
 
     //player stuff
     player = this.physics.add.sprite(100, 450, 'dude');
